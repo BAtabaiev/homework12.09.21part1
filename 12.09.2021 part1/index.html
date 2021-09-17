@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/font-awesome.css">
+    <script src="https://kit.fontawesome.com/07d1923e36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="signUpCont">
+        <h1>Create an account</h1>
+        <p>We always keep your name and email address private.</p>
+        <div class="regCont">
+            <div class="inputStyle1">
+                <input type="text" name="userName" placeholder="First name" pattern="^[a-zA-Zа-яА-я]" required>
+            </div>
+            <div class="inputStyle1">
+                <input type="text" name="userLastName" placeholder="Last name" pattern="^[a-zA-Zа-яА-я]" required>
+            </div>    
+            <div class="inputStyle1">
+                <input type="text" name="userDisplayName" placeholder="Display Name" pattern="^[a-z0-9_-]{3,15}$" required>
+            </div>
+            <div class="inputStyle2">
+                <input type="text" name="userEmail" placeholder="Email Address" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" required>
+            </div>
+            <div class="inputStyle3">
+                <input type="password" name="userPassword" placeholder="Password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$" required>
+            </div>
+                <div class="inputStyle3">
+                    <input type="password" name="userPasswordConfirm" placeholder="Password Confirmation" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$" required>
+                </div>
+        </div>  
+        <label>
+            <div class="radioCont">
+                <input type="radio" name="joinBuyerSeller" >
+                <div class="radioInfo">
+                        <h2>Join As a Buyer</h2>
+                        <p>I am looking for a Name, Logo or Tagline for my business, brand or product.</p>
+                </div>
+            </div>
+            <div class="radioCont">
+            <input type="radio" name="joinBuyerSeller">
+            <div class="radioInfo">
+            <h2>Join As a Creative or Marketplace Seller</h2>
+            <p>I plan to submit name ideas, Logo designs or sell names in Domain Marketplace.</p> 
+        </div>    
+        </div>
+        </label>
+        <label>
+            <input type="checkbox" name="allow">
+            <span>Allow Squadhelp to send marketing/promotional offers from time to time</span>
+        </label>
+        <input type="submit" value="Create account" class="submitCont">
+        <span>By clicking this button, you agree to our <a href="#">Terms of Service.</a></span>
+        <input type="submit" value="Sign up with Google" class="submitGoogle">
+    </div>
+
+</body>
+</html>
