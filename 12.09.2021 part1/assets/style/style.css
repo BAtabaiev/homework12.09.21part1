@@ -59,16 +59,16 @@ input {
   margin: 10px;
   text-align: center;
 }
-input[type="text"],
+input[type="text"]:valid,
 input[type="password"]:valid {
   border: 2px solid green;
 }
-/*
-input[type="text"],
+
+input[type="text"]:invalid,
 input[type="password"]:invalid {
   border: 2px solid red;
 }
-*/
+
 input:focus {
   outline: none;
   border: none;

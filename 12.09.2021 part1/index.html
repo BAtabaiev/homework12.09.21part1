@@ -16,12 +16,12 @@
     <div class="signUpCont">
         <h1>Create an account</h1>
         <p>We always keep your name and email address private.</p>
-        <div class="regCont">
+            <form class="regCont">
+                 <div class="inputStyle1">
+                <input type="text" name="userName" placeholder="First name" pattern="^[a-zA-Zа-яА-я]{1,32}" required>          
+                 </div>
             <div class="inputStyle1">
-                <input type="text" name="userName" placeholder="First name" pattern="^[a-zA-Zа-яА-я]" required>
-            </div>
-            <div class="inputStyle1">
-                <input type="text" name="userLastName" placeholder="Last name" pattern="^[a-zA-Zа-яА-я]" required>
+                <input type="text" name="userLastName" placeholder="Last name" pattern="^[a-zA-Zа-яА-я]{1,32}" required>
             </div>    
             <div class="inputStyle1">
                 <input type="text" name="userDisplayName" placeholder="Display Name" pattern="^[a-z0-9_-]{3,15}$" required>
@@ -30,12 +30,13 @@
                 <input type="text" name="userEmail" placeholder="Email Address" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" required>
             </div>
             <div class="inputStyle3">
-                <input type="password" name="userPassword" placeholder="Password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$" required>
+                <input type="password" name="userPassword" placeholder="Password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*_-]).{8,}$" required>
             </div>
                 <div class="inputStyle3">
-                    <input type="password" name="userPasswordConfirm" placeholder="Password Confirmation" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$" required>
+                    <input type="password" name="userPasswordConfirm" placeholder="Password Confirmation" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*_-]).{8,}$" required>
                 </div>
-        </div>  
+            </form>
+           
         <label>
             <div class="radioCont">
                 <input type="radio" name="joinBuyerSeller" >
